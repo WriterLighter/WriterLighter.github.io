@@ -1,0 +1,71 @@
+/*Element Style*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* class component */
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.half {
+    width: 50%;
+}
+
+p.fp{
+    text-indent: 1em;
+    margin: 0;
+    line-height: 1.2em;
+}
+
+.row {
+    max-width: 960px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 100%;
+
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+/* TOP */
+#top{
+    text-align: center;
+    height: 140px;
+    width: 730px;
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.catch {
+    text-indent: none;
+    margin: 0;
+    line-height: 1.2em;
+    font-size: 24px;
+}
+
+.logo {
+    font-family: serif;
+    font-size: 64px;
+    margin: 20px;
+    font-weight: normal;
+}
