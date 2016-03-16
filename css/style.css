@@ -154,4 +154,5 @@ p.fp {
     -ms-writing-mode: tb-rl;
     line-height: 1.5em;
     height: 80%;
+    max-height: 500px;
 }
