@@ -14,7 +14,7 @@ nav {
     height: 37px;
     position: fixed;
     top: 0;
-    background: rgba(256,256,256,0.7);
+    background: rgba(256,256,256,.8);
     z-index: 2;
 }
 
@@ -143,4 +143,15 @@ p.fp {
     font-size: 64px;
     margin: 20px;
     font-weight: normal;
+}
+
+/* Writing Mode and Theme */
+
+.write-vertical {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    line-height: 1.5em;
+    height: 80%;
 }
