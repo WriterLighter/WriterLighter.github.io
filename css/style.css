@@ -63,6 +63,12 @@ nav > ul > li > a:hover:after{
     transform: scaleX(1);
     cursor: pointer;
 }
+
+nav > ul > li > a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
 /*
 section {
     width: 100%;
