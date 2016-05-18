@@ -150,24 +150,16 @@ section {
 
 
 /* TOP */
-/*
 #top {
     text-align: center;
-    height: 140px;
-    width: 730px;
+    height: 150px;
+    widows: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
     margin: auto;
-}
-
-.catch {
-    text-indent: none;
-    margin: 0;
-    line-height: 1.2em;
-    font-size: 24px;
 }
 
 .logo {
