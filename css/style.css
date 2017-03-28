@@ -3,21 +3,33 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Serif', serif;
-    text-align: center;
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", "TakaoExMincho", serif;
 }
 
-div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.page-header {
+  height: 100vh;
+  width: 100vw;
+  padding: 1em;
+  padding-bottom: calc(25vh + 1em);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.header-inner{
+  transform: translateY(37.5vh) translateY(-50%);
 }
 
 h1{
     font-size: 64px;
+    font-weight: normal;
 }
 
-a {
+.logo {
+  width: 100%;
+  max-width: 500px;
+}
+
+.underline-shrink {
     position: relative;
     display: inline-block;
     height: 100%;
@@ -27,7 +39,7 @@ a {
     box-sizing: border-box;
 }
 
-a:after{
+.underline-shrink:after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -41,20 +53,82 @@ a:after{
     transition: all .3s ease;
 }
 
-a:hover:after,
-a:focus:after{
-    -webkit-transform: scaleX(1);
-    -ms--transform: scaleX(1);
+.underline-shrink:hover:after,
+.underline-shrink:focus:after{
     transform: scaleX(1);
     cursor: pointer;
 }
 
-a:hover,
-a:focus {
+.underline-shrink:hover,
+.underline-shrink:focus {
     text-decoration: none;
     color: #000;
 }
 
-.github{
-    margin-top: 3em;
+.t-center {
+  text-align: center;
+}
+
+.t-nowrap{
+  white-space: nowrap;
+}
+
+.modal{
+  transition: .3s;
+  position: fixed;
+  z-index: 3;
+  background: #fff;
+  top: -100%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  max-width: 80vw;
+  max-height: 80vh;
+  padding: 1em;
+  border-radius: .5em;
+}
+
+.modal:target{
+  top: 50%;
+}
+
+.modal:target ~ .modal-overray{
+  bottom: 0;
+}
+
+.modal-overray{
+  transition: .3s;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  bottom: 100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+.btn{
+  transition: .3s;
+  display: inline-block;
+  padding: .25em .5em;
+  border: solid 1px #555;
+  color: #000;
+  text-decoration: none;
+  border-radius: .25em;
+}
+
+.btn:hover {
+  background: rgba(0,0,0,.5);
+}
+
+.btn-goast {
+  padding: .5em 1em;
+  border-width: 2px;
+  border-radius: .5em;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+}
+
+.full-viewport {
+  width: 100vh;
+  height; 100vw;
 }
